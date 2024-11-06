@@ -1,4 +1,23 @@
 <?php
     setcookie('auth','YES',time() + 10, '/');
-    header('Location: /')
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="indexStyle.css">
+</head>
+<body>
+    <header>
+        <?php require "blocks/header.php" ?>
+    </header>
+    <main>
+        <h1>Вы не зарегистрированы</h1>
+    </main>
+    <footer>
+        <?php require "blocks/footer.php" ?>
+    </footer>
+</body>
+</html>
