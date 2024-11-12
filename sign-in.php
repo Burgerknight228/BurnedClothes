@@ -19,4 +19,6 @@
     VALUES('$login', '$pass', '$name')");
 
     $mysql->close();
+    
+    setcookie('auth','YES',time() + 10, '/');
 ?>
