@@ -21,4 +21,6 @@
     $mysql->close();
     
     setcookie('auth','YES',time() + 10, '/');
+    
+    header('Location: profile.php')
 ?>
